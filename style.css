@@ -1,0 +1,421 @@
+.main-nav a {
+  color: rgb(244, 244, 244);
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-nav a.active {
+  border-bottom: 2px solid #4caf50;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.top-header {
+  background-color: #3865e0;
+  color: rgb(255, 255, 255);
+
+  padding: 10px 0;
+  background-image: url('wisata 2.jpg');
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  height: 40px;
+  /* Adjust the height as needed */
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 15px;
+}
+
+.menu-item:hover .submenu-content {
+  display: block;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.submenu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu-content a:hover {
+  background-color: #ddd;
+  color: rgb(134, 41, 41);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  margin-right: 10px;
+  width: 200px;
+  /* Adjust the width as needed */
+
+}
+
+.search-bar button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+h2{
+  background-color: #7BD3EA;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+/*SIDE LEFT*/
+
+header {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+}
+
+section {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+}
+
+section #sambutan {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: block;
+}
+
+section #hitRata {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #hitRata {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #KalDiskon {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #konvNilai {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #HitNilai {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #HitKata {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #ManArray {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #ManString {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #Hitungs {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section #Kalkulator {
+  flex: 1;
+  padding: 1em;
+  position: relative;
+  display: none;
+}
+
+section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #f20000;
+}
+
+
+main nav {
+  background-color: #4CB9E7;
+  padding: 5em;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+main nav ul {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+}
+
+nav li {
+  margin-bottom: 0.5em;
+}
+
+main nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.5em;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+main nav a:hover {
+  background-color: #eee;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #625f5f;
+  color: #fff;
+  padding: 20px;
+  border-top:5px solid #000000;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.column h3 {
+  font-size: 18px;
+}
+
+.column p {
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+
+.social-icon {
+  flex-direction: column;
+}
+
+
+.logo {
+  font-size: 1.5em;
+}
+/**
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+?**/
+.gallery img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-description {
+  margin-top: 10px;
+}
+
+.image-description p {
+  margin-bottom: 10px;
+}
+
+
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.container {
+
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Mengurangi ukuran font untuk layar kecil */
+  }
+
+  header {
+    padding: 0.5em; /* Mengurangi padding header */
+  }
+
+  main {
+    flex-direction: column; /* Merubah orientasi main menjadi kolom untuk layar kecil */
+  }
+
+  section {
+    padding: 0.5em; /* Mengurangi padding section */
+  }
+
+  section:not(:last-child)::after {
+    display: none; /* Menghilangkan garis pemisah di antara section */
+  }
+
+  header nav,
+  main nav {
+    padding: 0.5em; /* Mengurangi padding pada navigasi */
+  }
+
+  footer {
+    flex-direction: column; /* Merubah orientasi footer menjadi kolom untuk layar kecil */
+  }
+
+  .footer-section {
+    width: 100%; /* Mengisi seluruh lebar untuk layar kecil */
+    margin-bottom: 10px; /* Memberikan ruang antara setiap bagian di footer */
+  }
+
+  .footer-section:not(:last-child)::after {
+    display: none; /* Menghilangkan garis pemisah di antara bagian footer */
+  }
+
+  ul {
+    flex-direction: column; /* Merubah orientasi ikon sosial di footer menjadi kolom */
+    align-items: center; /* Memusatkan ikon sosial di footer */
+  }
+
+  .social-icon {
+    margin-bottom: 0.5em; /* Memberikan ruang antara ikon sosial di footer */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); /* Menjadi satu kolom untuk layar kecil */
+  }
+
+  input[type="text"],
+  input[type="number"],
+  button {
+    width: 100%; /* Mengisi seluruh lebar untuk input dan tombol */
+  }
+
+  .container {
+    width: 100%; /* Mengisi seluruh lebar untuk container */
+  }
+}

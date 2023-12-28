@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket Masuk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ticket-table {
+            max-width: 800px;
+            margin: 20px auto;
+         
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+     
+        }
+
+        th, td {
+            border: 1px solid #c51010;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #afbbb4;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .buy-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+
+        .quantity-input {
+            width: 40px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ticket-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Gambar</th>
+                <th>Deskripsi</th>
+                <th>Harga Tiket</th>
+                <th>Jumlah Beli</th>
+                <th>Total Harga</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="wisata 2.jpg" alt="Gambar 1"></td>
+                <td>AEK MATUO</td>
+                <td>Rp. 50,000</td>
+                <td><input type="number" class="quantity-input" id="quantity1" value="1"></td>
+                <td id="total1">Rp. 50,000</td>
+                <td><button class="buy-button" onclick="beliTiket('Wisata Alam', 50000, 1)">Beli</button></td>
+            </tr>
+            <tr>
+                <td><img src="wisata 4.jpg" alt="Gambar 2"></td>
+                <td>OMBAK BONO</td>
+                <td>Rp. 75,000</td>
+                <td><input type="number" class="quantity-input" id="quantity2" value="1"></td>
+                <td id="total2">Rp. 75,000</td>
+                <td><button class="buy-button" onclick="beliTiket('Tempat Bersejarah', 75000, 2)">Beli</button></td>
+            </tr>
+            <tr>
+                <td><img src="wisata1.jpg" alt="Gambar 3"></td>
+                <td>ULU KASOK</td>
+                <td>Rp. 100,000</td>
+                <td><input type="number" class="quantity-input" id="quantity3" value="1"></td>
+                <td id="total3">Rp. 100,000</td>
+                <td><button class="buy-button" onclick="beliTiket('Taman Hiburan', 100000, 3)">Beli</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function beliTiket(deskripsi, harga, id) {
+        var quantity = document.getElementById('quantity' + id).value;
+        var totalHarga = harga * quantity;
+
+        var konfirmasi = confirm('Anda yakin ingin membeli ' + quantity + ' tiket untuk ' + deskripsi + ' seharga Rp. ' + totalHarga + '?');
+
+        if (konfirmasi) {
+            alert('Anda telah berhasil membeli ' + quantity + ' tiket untuk ' + deskripsi + ' seharga Rp. ' + totalHarga);
+            updateTotalHarga(id, totalHarga);
+        } else {
+            alert('Pembelian tiket dibatalkan.');
+        }
+    }
+
+    function updateTotalHarga(id, totalHarga) {
+        document.getElementById('total' + id).innerText = 'Rp. ' + totalHarga;
+    }
+</script>
+
+</body>
+</html>

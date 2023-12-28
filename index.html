@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="serch.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <head>
+        <meta charset="UTF-7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WISATA RIAU</title>
+    </head>
+
+<body>
+    <header class="top-header">
+        <div class="container">
+            <div class="logo">
+                <h1>RIAU WISATA</h1>
+            </div>
+            <nav class="main-nav">
+                <div class="menu-item">
+                    <a href="#">HOME</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">PROFIL</a>
+
+                </div>
+                <div class="menu-item">
+                    <a href="#">BERITA</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">WISATA</a>
+                    <div class="submenu-content">
+                        <a href="tugas.html">WISATA AIR</a>
+                        <a href="#">WISATA DARAT</a>
+                        <a href="#">WISATA UDARA</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">KULINER</a>
+                    <div class="submenu-content">
+                        <a href="#">MIE SAGU</a>
+                        <a href="#">GULAI BELACAN</a>
+                        <a href="#">ROTI CANAI</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">KONTAK</a>
+                    <div class="submenu-content">
+                        <a href="#">FACEBOOK</a>
+                        <a href="#">EMAIL</a>
+                        <a href="#">INSTAGRAM</a>
+                    </div>
+
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SIDE LEFT -->
+
+
+    <!-- Your content goes here -->
+
+    <main>
+
+        <section>
+            <center>
+                <h2>MENU SIDEBAR</h2>
+            </center>
+            <nav>
+                <ul>
+                    <li><a href="#sambutan" onclick="toggleDiv('sambutan')">Sambutan</a></li>
+                    <li><a href="#hitRata" onclick="toggleDiv('hitRata')">Hitung Rata-Rata</a></li>
+                    <li><a href="#KalDiskon" onclick="toggleDiv('KalDiskon')">Kalkulator Diskon</a></li>
+                    <li><a href="#HitNilai" onclick="toggleDiv('HitNilai')">Hitung Nilai</a></li>
+                    <li><a href="#HitKata" onclick="toggleDiv('HitKata')">Hitung Kata</a></li>
+                    <li><a href="#ManArray" onclick="toggleDiv('ManArray')">Manipulasi Array</a></li>
+                    <li><a href="#ManString" onclick="toggleDiv('ManString')">Manipulasi String</a></li>
+                    <li><a href="#Hitungs" onclick="toggleDiv('Hitungs')">Menghitung</a></li>
+                    <li><a href="#Kalkulator" onclick="toggleDiv('Kalkulator')">Kalkulator</a></li>
+                </ul>
+            </nav>
+        </section>
+
+
+        <section id="mainTugas">
+            <CENTER>
+                <h2>TUGAS JAVA SCRIPT </h2>
+            </CENTER>
+            <div class="container" id="sambutan">
+                <h1>Selamat Datang!</h1>
+                <section>
+                    <p>
+                        Masukkan nama Anda:
+                    </p>
+
+                    <input type="text" id="namaInput">
+                    <button onclick="tampilkanSambutan()">Tampilkan Sambutan</button>
+                    <p id="pesanSambutan"></p>
+                </section>
+            </div>
+
+            <div class="container" id="hitRata">
+                <h1>Hitung Nilai Rata-rata</h1>
+                <section>
+                    <p>
+                        Masukkan nilai mahasiswa:
+                    </p>
+                    <input type="number" id="nilai1" placeholder="Nilai 1">
+                    <input type="number" id="nilai2" placeholder="Nilai 2">
+                    <input type="number" id="nilai3" placeholder="Nilai 3">
+                    <button onclick="hitungRataRa()">Hitung Rata-rata</button>
+
+                    <p id="rataRata"></p>
+                    <p id="statusLulus"></p>
+                </section>
+            </div>
+
+            <div class="container" id="KalDiskon">
+                <h1>Kalkulator Diskon</h1>
+                <section>
+                    <p>
+                        Masukkan total belanja:
+                    </p>
+                    <input type="number" id="totalBelanja" placeholder="Total Belanja">
+                    <button onclick="hitungTotal()">Hitung Total Pembayaran</button>
+                    <p id="totalPembayaran"></p>
+                </section>
+            </div>
+
+            <div class="container" id="konvNilai">
+                <h1>Konversi Nilai ke Huruf</h1>
+                <section>
+                    <p>
+                        Masukkan nilai Anda:
+                    </p>
+                    <input type="number" id="nilaiInput1" min="0" max="100">
+                    <button onclick="konversiNilai()">Konversi</button>
+                    <p id="hasilKonversi"></p>
+                </section>
+            </div>
+
+            <div class="container" id="HitNilai">
+                <h1>Perhitungan Nilai</h1>
+                <section>
+                    <label>MTK:</label>
+                    <input type="text" id="mtkInput">
+                    <br>
+                    <br>
+                    <label>IPA:</label>
+                    <input type="text" id="ipaInput">
+                    <br>
+                    <br>
+                    <label>IPS:</label>
+                    <input type="text" id="ipsInput">
+                    <br>
+                    <br>
+                    <label>B. Inggris:</label>
+                    <input type="text" id="bingInput">
+                    <br>
+                    <br>
+                    <button onclick="hitungRataRata()">Hitung Rata-rata</button>
+                    <p id="hasilRataRata"></p>
+                    <button onclick="nilaiTertinggi()">Nilai Tertinggi</button>
+                    <p id="hasilTertinggi"></p>
+                </section>
+            </div>
+
+            <div class="container" id="HitKata">
+                <h1>Hitung Jumlah Kata</h1>
+                <section>
+                    <label>Masukkan paragraf:</label><br>
+                    <textarea id="paragrafInput" rows="2"></textarea>
+                    <br>
+                    <button onclick="hitungJumlahKata()">Hitung Jumlah Kata</button>
+                    <p id="hasilJumlahKata"></p>
+                </section>
+            </div>
+
+            <div class="container" id="ManArray">
+                <section>
+                    <h1>Manipulasi Array</h1>
+                    <label for="namaBarang">Nama Barang:</label>
+                    <input type="text" id="namaBarang"><br>
+                    <br>
+                    <button onclick="tambahBarang()">Tambah Barang</button>
+                    <h2>Daftar Barang:</h2>
+                    <ul id="daftarBarang"></ul>
+                </section>
+            </div>
+
+            <div class="container" id="ManString">
+                <section>
+                    <h1>String Manipulation</h1>
+                    <label for="tanggal">Tanggal :</label>
+                    <input type="text" id="tanggal" placeholder="dd-mm-yyyy"><br>
+                    <br>
+                    <input type="text" id="resTgl" placeholder="Hasil" disabled><br>
+                    <br>
+                    <button onclick="stringManp()">Ubah Format Tanggal</button>
+                </section>
+            </div>
+
+            <div class="container" id="Hitungs">
+                <section>
+                    <h1>Fungsi Menghitung Nilai</h1>
+                    <input type="text" id="nilaiInput" placeholder="Masukkan Semua Nilai, ex : 80,70,50,90,100">
+                    <input type="text" id="resInput" placeholder="Hasil" disabled>
+                    <button onclick="hitungTotalNilai()">Hitung</button>
+                </section>
+            </div>
+
+            <div class="container" id="Kalkulator">
+                <section>
+                    <h1>Kalkulator</h1>
+                    <input type="number" id="angka1" placeholder="Masukkan angka pertama"><br>
+                    <br>
+                    <select id="operator">
+                        <option value="tambah">+</option>
+                        <option value="kurang">-</option>
+                        <option value="kali">x</option>
+                        <option value="bagi">/</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="number" id="angka2" placeholder="Masukkan angka kedua"><br>
+                    <br>
+                    <button onclick="hitung()">Hitung</button>
+                    <p>
+                        Hasil: <span id="hasil"></span>
+                    </p>
+                </section>
+            </div>
+
+
+
+            <br /><br /><br /><br /><br />
+        </section>
+
+        <section>
+            <aside>
+                <center><h2>Gallery Wisata Riau
+
+                </h2></center>
+
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="wisata1.jpg" alt="Image 1">
+                        <div class="image-description">
+                            <p>ULU KASOK</p>
+                            <button onclick="pesanTiket('ULU KASOK')">Pesan Tiket</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="wisata 2.jpg" alt="Image 2">
+                        <div class="image-description">
+                            <p>AEK MATUO</p>
+                            <button onclick="pesanTiket('AEK MATUO')">Pesan Tiket</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="wisata 4.jpg" alt="Image 4">
+                        <div class="image-description">
+                            <p>OMBAK BONO</p>
+                            <button onclick="pesanTiket('OMBAK BONO')">Pesan Tiket</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </aside>
+        </section>
+
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <i class='bx bxl-instagram-alt bx-border bx-tada-hover ' style='font-size: 30px;'></i>
+                <i class='bx bxl-youtube bx-border bx-tada-hover' style="font-size: 30px;"></i>
+                <i class='bx bxl-whatsapp-square bx-border bx-tada-hover' style="font-size: 30px;"></i>
+
+                <i class='bx bxl-twitter bx-border bx-tada-hover' style="font-size: 30px;"></i>
+                <i class='bx bxl-instagram-alt bx-border bx-tada-hover ' style='font-size: 30px;'></i>
+                <i class='bx bxl-youtube bx-border bx-tada-hover' style="font-size: 30px;"></i>
+                <i class='bx bxl-whatsapp-square bx-border bx-tada-hover' style="font-size: 30px;"></i>
+
+                <i class='bx bxl-twitter bx-border bx-tada-hover' style="font-size: 30px;"></i>
+
+                <p>copyright 2023 @Nandaagus</p>
+
+            </div>
+
+            <div class="column">
+                <h3>Layanan</h3>
+                <p>Instgram</p>
+                <p>whatsap</p>
+                <p>Facebook</p>
+                <p>Email</p>
+            </div>
+            <div class="column">
+                <h3>Tentang</h3>
+                <p>Wisata</p>
+                <p>Liburan</p>
+            </div>
+            <div class="column">
+                <h3>Informasi</h3>
+                <p>Redaksi</p>
+                <p>Karir</p>
+                <p>Kotak pos</p>
+            </div>
+            <div class="column">
+                <h3>Jaringan Media</h3>
+                <p>Internet</p>
+                <p>Media Sosial</p>
+                <p>Internet</p>
+            </div>
+            <div class="column">
+                <center><h3>iklan web</h3></center>
+                <center><video id="myVideo" width="180" height="176" controls>
+                    <source src="vidio.mp4" type="video/mp4">
+                   
+                  </video></center>
+            </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/a86445b340.js" crossorigin="anonymous"></script>
+
+</html>
